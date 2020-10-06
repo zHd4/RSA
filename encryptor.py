@@ -14,21 +14,7 @@ class Encryptor:
 
     def __split_to_blocks(self, data):
         size, length = len(data), self.__length
-
-        if size <= length:
-            return [data]
-        else:
-            blocks = []
-
-            for i in range(int(size / length)):
-                blocks.append(data[length * i:length * (i + 1)])
-
-            last = size % length
-
-            if last != 0:
-                blocks.append(data[:size - last])
-
-            return blocks
+        return [data[i:i + length] for i in range(0, size, length)]
 
     # noinspection PyMethodMayBeStatic
     def __join_blocks(self, blocks):
