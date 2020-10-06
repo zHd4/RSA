@@ -10,14 +10,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62ed7cd2-5d8f-46ef-b9f2-0394abbb40c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keygen.py" afterDir="false" />
-    </list>
+    <list default="true" id="62ed7cd2-5d8f-46ef-b9f2-0394abbb40c1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601977455372</updated>
       <workItem from="1601977475126" duration="184000" />
-      <workItem from="1601977663641" duration="303000" />
+      <workItem from="1601977663641" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="Created venv">
       <created>1601977736313</created>
@@ -51,7 +56,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601977736313</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created basic project structure">
+      <created>1601978147173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601978147173</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created basic project structure">
+      <created>1601978177547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601978177547</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,7 +89,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created venv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created venv" />
+    <MESSAGE value="Created basic project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created basic project structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1601978151865">
