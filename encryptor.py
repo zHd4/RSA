@@ -10,26 +10,29 @@ class Encryptor:
         self.__crypto = PKCS1_OAEP.new(self.__public_key)
 
     def __split_to_blocks(self, data):
-        size = len(data)
-        length = self.__length
+        size, length = len(data), self.__length
 
         if size <= length:
             return [data]
         else:
-            result = []
+            blocks = []
 
             for i in range(int(size / length)):
-                result.append(data[length * i:length * (i + 1)])
+                blocks.append(data[length * i:length * (i + 1)])
 
             last = size % length
 
             if last != 0:
-                result.append(data[:size - last])
+                blocks.append(data[:size - last])
 
-            return result
+            return blocks
 
-    def __join_blocks(self):
-        pass
+    # noinspection PyMethodMayBeStatic
+    def __join_blocks(self, blocks):
+        if len(blocks) > 0:
+            return b''.join(blocks)
+        else:
+            return blocks
 
     def encrypt(self, data_bytes):
         return self.__crypto.encrypt(data_bytes)
