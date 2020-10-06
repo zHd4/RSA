@@ -150,7 +150,9 @@
     <MESSAGE value="Removed keys auto-export in keygen.py" />
     <MESSAGE value="Implemented encryptor.py" />
     <MESSAGE value="key2pem in keygen.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="key2pem in keygen.py" />
+    <MESSAGE value="Simplified split_to_blocks() in encryptor.py" />
+    <MESSAGE value="Simplified join_blocks() in encryptor.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplified join_blocks() in encryptor.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1601978894055">
