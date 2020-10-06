@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62ed7cd2-5d8f-46ef-b9f2-0394abbb40c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keygen.py" beforeDir="false" afterPath="$PROJECT_DIR$/keygen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encryptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/encryptor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601977455372</updated>
       <workItem from="1601977475126" duration="184000" />
-      <workItem from="1601977663641" duration="988000" />
+      <workItem from="1601977663641" duration="2226000" />
     </task>
     <task id="LOCAL-00001" summary="Created venv">
       <created>1601977736313</created>
@@ -80,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601978399690</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented keygen.py">
+      <created>1601978881725</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601978881725</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,12 +108,13 @@
     <MESSAGE value="Created venv" />
     <MESSAGE value="Created basic project structure" />
     <MESSAGE value="Installed pycryptodome" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed pycryptodome" />
+    <MESSAGE value="Implemented keygen.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented keygen.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1601978404937">
+    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1601978894055">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.734@0.0.1366.734" timestamp="1601978404937" />
+    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.734@0.0.1366.734" timestamp="1601978894055" />
   </component>
 </project>
