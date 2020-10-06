@@ -6,7 +6,7 @@ class KeyGen:
         self.__key_pair = RSA.generate(key_length)
 
     def get_public_key(self):
-        return self.__key_pair.publickey()
+        return self.__key_pair.publickey().exportKey()
 
     def get_private_key(self):
-        return self.__key_pair
+        return self.__key_pair.exportKey()
