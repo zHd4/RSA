@@ -18,7 +18,4 @@ class Encryptor:
 
     # noinspection PyMethodMayBeStatic
     def __join_blocks(self, blocks):
-        if len(blocks) > 0:
-            return b''.join(blocks)
-        else:
-            return blocks
+        return b''.join(blocks) if len(blocks) > 0 else blocks
