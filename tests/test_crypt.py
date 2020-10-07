@@ -26,7 +26,7 @@ class TestCrypt(unittest.TestCase):
         self.__decrypted = Decryptor(self.__key_size, self.__private_key).decrypt(self.__encrypted)
 
     def check_tests(self):
-        pass
+        self.assertEqual(self.__test_data, self.__decrypted, msg='Initial and decrypted data are not equal')
 
 
 if __name__ == '__main__':
