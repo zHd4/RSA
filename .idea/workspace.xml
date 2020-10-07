@@ -28,7 +28,8 @@
   <component name="ChangeListManager">
     <list default="true" id="62ed7cd2-5d8f-46ef-b9f2-0394abbb40c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_crypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_crypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decryptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/decryptor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encryptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/encryptor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +92,7 @@
       <workItem from="1601977475126" duration="184000" />
       <workItem from="1601977663641" duration="4321000" />
       <workItem from="1602061619985" duration="4817000" />
+      <workItem from="1602082783639" duration="3333000" />
     </task>
     <task id="LOCAL-00001" summary="Created venv">
       <created>1601977736313</created>
@@ -211,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602072118991</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="All test logic moved to test_crypt() in test_crypt.py">
+      <created>1602084374678</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602084374679</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,39 +268,60 @@
     <MESSAGE value="Implemented test_keygen() method in test_crypt.py" />
     <MESSAGE value="Implemented test encryption/decryption in test_crypt.py" />
     <MESSAGE value="Implemented check_tests() method in test_crypt.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented check_tests() method in test_crypt.py" />
+    <MESSAGE value="All test logic moved to test_crypt() in test_crypt.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="All test logic moved to test_crypt() in test_crypt.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="97" y="100" width="1172" height="537" key="DiffContextDialog" timestamp="1602066301047">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
     <state x="97" y="100" width="1172" height="537" key="DiffContextDialog/0.0.1366.734@0.0.1366.734" timestamp="1602066301047" />
-    <state width="1324" height="364" key="GridCell.Tab.0.bottom" timestamp="1602072236718">
+    <state width="1324" height="364" key="GridCell.Tab.0.bottom" timestamp="1602090011514">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1324" height="364" key="GridCell.Tab.0.bottom/0.0.1366.734@0.0.1366.734" timestamp="1602072236718" />
-    <state width="1324" height="364" key="GridCell.Tab.0.center" timestamp="1602072236711">
+    <state width="1324" height="364" key="GridCell.Tab.0.bottom/0.0.1366.734@0.0.1366.734" timestamp="1602090011514" />
+    <state width="1324" height="364" key="GridCell.Tab.0.center" timestamp="1602090011510">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1324" height="364" key="GridCell.Tab.0.center/0.0.1366.734@0.0.1366.734" timestamp="1602072236711" />
-    <state width="1324" height="364" key="GridCell.Tab.0.left" timestamp="1602072236706">
+    <state width="1324" height="364" key="GridCell.Tab.0.center/0.0.1366.734@0.0.1366.734" timestamp="1602090011510" />
+    <state width="1324" height="364" key="GridCell.Tab.0.left" timestamp="1602090011509">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1324" height="364" key="GridCell.Tab.0.left/0.0.1366.734@0.0.1366.734" timestamp="1602072236706" />
-    <state width="1324" height="364" key="GridCell.Tab.0.right" timestamp="1602072236714">
+    <state width="1324" height="364" key="GridCell.Tab.0.left/0.0.1366.734@0.0.1366.734" timestamp="1602090011509" />
+    <state width="1324" height="364" key="GridCell.Tab.0.right" timestamp="1602090011513">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1324" height="364" key="GridCell.Tab.0.right/0.0.1366.734@0.0.1366.734" timestamp="1602072236714" />
-    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1602072183035">
+    <state width="1324" height="364" key="GridCell.Tab.0.right/0.0.1366.734@0.0.1366.734" timestamp="1602090011513" />
+    <state width="1324" height="331" key="GridCell.Tab.1.bottom" timestamp="1602088612383">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.734@0.0.1366.734" timestamp="1602072183035" />
-    <state width="686" height="368" key="XDebugger.FullValuePopup" timestamp="1601981642807">
+    <state width="1324" height="331" key="GridCell.Tab.1.bottom/0.0.1366.734@0.0.1366.734" timestamp="1602088612383" />
+    <state width="1324" height="331" key="GridCell.Tab.1.center" timestamp="1602088612381">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="686" height="368" key="XDebugger.FullValuePopup/0.0.1366.734@0.0.1366.734" timestamp="1601981642807" />
+    <state width="1324" height="331" key="GridCell.Tab.1.center/0.0.1366.734@0.0.1366.734" timestamp="1602088612381" />
+    <state width="1324" height="331" key="GridCell.Tab.1.left" timestamp="1602088612380">
+      <screen x="0" y="0" width="1366" height="734" />
+    </state>
+    <state width="1324" height="331" key="GridCell.Tab.1.left/0.0.1366.734@0.0.1366.734" timestamp="1602088612380" />
+    <state width="1324" height="331" key="GridCell.Tab.1.right" timestamp="1602088612382">
+      <screen x="0" y="0" width="1366" height="734" />
+    </state>
+    <state width="1324" height="331" key="GridCell.Tab.1.right/0.0.1366.734@0.0.1366.734" timestamp="1602088612382" />
+    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1602084380294">
+      <screen x="0" y="0" width="1366" height="734" />
+    </state>
+    <state x="278" y="104" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1366.734@0.0.1366.734" timestamp="1602084380294" />
+    <state width="686" height="368" key="XDebugger.FullValuePopup" timestamp="1602088572906">
+      <screen x="0" y="0" width="1366" height="734" />
+    </state>
+    <state width="686" height="368" key="XDebugger.FullValuePopup/0.0.1366.734@0.0.1366.734" timestamp="1602088572906" />
+    <state x="226" y="101" width="910" height="532" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602090024260">
+      <screen x="0" y="0" width="1366" height="734" />
+    </state>
+    <state x="226" y="101" width="910" height="532" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.734@0.0.1366.734" timestamp="1602090024260" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RSA$Unittests_for_test_crypt_TestCrypt.coverage" NAME="Unittests for test_crypt.TestCrypt Coverage Results" MODIFIED="1602072204260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/RSA$Unittests_for_test_crypt_TestCrypt.coverage" NAME="Unittests for test_crypt.TestCrypt Coverage Results" MODIFIED="1602088640258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>

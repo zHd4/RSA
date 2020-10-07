@@ -4,7 +4,7 @@ from Crypto.Cipher import PKCS1_OAEP
 
 class Encryptor:
     def __init__(self, key_length, public_key):
-        self.__length = key_length
+        self.__length = int(key_length / 16)
         self.__crypto = PKCS1_OAEP.new(RSA.importKey(public_key))
 
     def encrypt(self, data_bytes):
