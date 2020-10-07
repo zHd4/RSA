@@ -27,7 +27,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62ed7cd2-5d8f-46ef-b9f2-0394abbb40c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_crypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_crypt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +67,7 @@
       <updated>1601977455372</updated>
       <workItem from="1601977475126" duration="184000" />
       <workItem from="1601977663641" duration="4321000" />
-      <workItem from="1602061619985" duration="1891000" />
+      <workItem from="1602061619985" duration="2973000" />
     </task>
     <task id="LOCAL-00001" summary="Created venv">
       <created>1601977736313</created>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602066294335</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implemented test_keygen() method in test_crypt.py">
+      <created>1602070472812</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602070472812</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +219,8 @@
     <MESSAGE value="Removed public_key private field from encryptor.py" />
     <MESSAGE value="Added RSA key importing in encryptor.py, decryptor.py" />
     <MESSAGE value="Implemented decrypt() methodin decryptor.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented decrypt() methodin decryptor.py" />
+    <MESSAGE value="Implemented test_keygen() method in test_crypt.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented test_keygen() method in test_crypt.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="97" y="100" width="1172" height="537" key="DiffContextDialog" timestamp="1602066301047">
