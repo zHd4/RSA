@@ -10,7 +10,12 @@ class Encryptor:
         self.__crypto = PKCS1_OAEP.new(self.__public_key)
 
     def encrypt(self, data_bytes):
-        return self.__crypto.encrypt(data_bytes)
+        encrypted_chunks = []
+
+        for block in self.__split_to_blocks(data_bytes):
+            encrypted_chunks.append(self.__crypto.encrypt(block))
+
+        return self.__join_blocks(encrypted_chunks)
 
     def __split_to_blocks(self, data):
         size, length = len(data), self.__length
