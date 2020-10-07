@@ -8,7 +8,12 @@ class Decryptor:
         self.__crypto = PKCS1_OAEP.new(RSA.importKey(private_key))
 
     def decrypt(self, data_bytes):
-        pass
+        decrypted_chunks = []
+
+        for chunk in self.__split_to_blocks(data_bytes):
+            decrypted_chunks.append(self.__crypto.decrypt(chunk))
+
+        return self.__join_blocks(decrypted_chunks)
 
     def __split_to_blocks(self, data):
         size, length = len(data), self.__length
